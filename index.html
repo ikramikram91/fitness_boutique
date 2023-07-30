@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/6.0.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bc580c535a.js" crossorigin="anonymous"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+
+</head>
+
+<body class=" bg-dark">
+
+    <header class="container-fluid ">
+
+        <!-- navBar -->
+        <ul class="nav d-flex bd-highlight mb-3">
+            <li class="  nav-item ">
+                <a href="#"> <img src="img/Image2.png" width="78" height="58" alt="" srcset=""></a>
+            </li>
+            <li class="  nav-item me-auto p-2 bd-highlight">
+
+                <a class="nav-link active" aria-current="page" style="color: aliceblue;" href="#"> <i
+                        class="fa fa-phone" aria-hidden="true"></i> 06 00 00 00 00</a>
+            </li>
+            <li class="nav-item p-2 bd-highlight">
+                <a class="nav-link" href="#" style="color: aliceblue;">Suivre ma commande</a>
+            </li>
+
+
+
+            <!-- CONNEXION -->
+
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered ">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel"> Connexion</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email"  class="col-form-label">Identifiant: </label>
+                                    <input type="email" id="email" name="email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="pwd" class="col-form-label">Mot de passe:</label>
+                                    <input type="password" id="pwd" name="pwd"> 
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Se connecter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn bg-dark 10px" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                style="color: aliceblue;"> <i class="fa fa-user" aria-hidden="true"></i>
+                Mon compte</button>
+        </ul>
+
+
+
+
+
+
+
+        <!-- search bar -->
+        <nav class="navbar navbar-light ">
+            <div class="container-fluid">
+
+                <h1 style="color: aliceblue;"> Helty Body </h1>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <a href="#" style="color: aliceblue; "> <i class="fa fa-cart-arrow-down fa-3x " aria-hidden="true"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- photo de page  -->
+    <div class="container-fluid mt-3 d-flex justify-content-center ">
+        <img id="imgathletique" class="img-responsive" src="img/athletic-man-and-woman-with-dumbbells 2.jpg"
+            alt="image d'un homme et une femme dans une salle de sport">
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- produit mis en vente  -->
+    <main class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-3 mt-3 g-4">
+
+            <div class="col text-light bg-dark w-3">
+                <div class="card text-center">
+                    <img src="img/60fb52433fa62e35357a2ee5.jpg" class="card-img-top" alt="...">
+
+                    <!-- card body  -->
+                    <div class="card-body bg-dark ">
+                        <h4> nom du produit </h4>
+                        <h5 class="card-title"> 25.99 €</h5>
+                        <a href="#" class="btn "> ACHETER </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col text-light bg-dark w-3">
+                <div class="card text-center">
+                    <img src="img/60fb52453fa62e35357a2eed.jpg" class="card-img-top" alt="...">
+
+                    <!-- card body -->
+                    <div class="card-body bg-dark  ">
+                        <h4> nom du produit </h4>
+                        <h5 class="card-title"> 25.99 €</h5>
+                        <a href="#" class="btn "> ACHETER </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col text-light bg-dark">
+                <div class="card text-center">
+                    <img src="img/60fb52453fa62e35357a2eed.jpg" class="card-img-top" alt="...">
+
+                    <!-- card body -->
+                    <div class="card-body bg-dark  ">
+                        <h4> nom du produit </h4>
+                        <h5 class="card-title"> 25.99 €</h5>
+                        <a href="#" class="btn "> ACHETER </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="col text-light bg-dark">
+                <div class="card text-center">
+                    <img src="img/60fb52453fa62e35357a2eed.jpg" class="card-img-top" alt="...">
+
+                    <!-- card body -->
+                    <div class="card-body bg-dark  ">
+                        <h4> nom du produit </h4>
+                        <h5 class="card-title"> 25.99 €</h5>
+                        <a href="#" class="btn "> ACHETER </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="col text-light bg-dark">
+                <div class="card text-center">
+                    <img src="img/60fb52453fa62e35357a2eed.jpg" class="card-img-top" alt="...">
+
+                    <!-- card body -->
+                    <div class="card-body bg-dark  ">
+                        <h4> nom du produit </h4>
+                        <h5 class="card-title"> 25.99 €</h5>
+                        <a href="#" class="btn "> ACHETER </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="col text-light bg-dark">
+                <div class="card text-center">
+                    <img src="img/60fb52453fa62e35357a2eed.jpg" class="card-img-top" alt="...">
+
+                    <!-- card body -->
+                    <div class="card-body bg-dark  ">
+                        <h4> nom du produit </h4>
+                        <h5 class="card-title"> 25.99 €</h5>
+                        <a href="#" class="btn "> ACHETER </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <!-- FOOTER  -->
+    <footer id="dk-footer" class="dk-footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="dk-footer-box-info " style="margin-top: 100px;">
+                        <a href="index.html" class="footer-logo">
+                            <img src="img/Image2.png" alt="footer_logo" width="78" height="58" class="img-fluid">
+                        </a>
+
+                        <div class="footer-social-link" style="margin-top: 100px;">
+                            <h3>Nos reseaux </h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Social link -->
+                    </div>
+
+
+                </div>
+                <!-- End Col -->
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-us">
+                                <div class="contact-icon">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>Paris France</h3>
+                                    <p>5353 avenue</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                        <div class="col-md-6">
+                            <div class="contact-us contact-us-last">
+                                <div class="contact-icon">
+                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>06 00 00 00 00</h3>
+                                    <p>Appeler nous </p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Contact Row -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget footer-left-widget">
+                                <div class="section-heading">
+                                    <h3>Lien utils</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Our Team</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">Contact </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Faq</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Footer Widget -->
+                        </div>
+                        <!-- End col -->
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget">
+                                <div class="section-heading">
+                                    <h3>Nous suivre</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <p>
+                                    <!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                                    Reference site about Lorem Ipsum, giving information on its origins, as well.
+                                </p>
+                                <form action="#">
+                                    <div class="form-row">
+                                        <div class="col dk-footer-form">
+                                            <input type="email" class="form-control" placeholder="Email Address">
+                                            <button type="submit">
+                                                <i class="fa fa-send"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- End form -->
+                            </div>
+                            <!-- End footer widget -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Widget Row -->
+        </div>
+        <!-- End Contact Container -->
+
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Copyright © 2019, All Right Reserved</span>
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="copyright-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Copyright Container -->
+        </div>
+        <!-- End Copyright -->
+        <!-- Back to top -->
+        <div id="back-to-top" class="back-to-top">
+            <button class="btn btn-dark" title="Back to Top" style="display: block;">
+                <i class="fa fa-angle-up"></i>
+            </button>
+        </div>
+        <!-- End Back to top -->
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+
+</html>
